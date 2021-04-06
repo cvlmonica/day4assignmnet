@@ -1,0 +1,54 @@
+{
+	"name": "AzureSqlTable6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Color",
+				"type": "varchar"
+			},
+			{
+				"name": "StandardCost",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ListPrice",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "insertedDate",
+				"type": "date"
+			},
+			{
+				"name": "updatedDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "product"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

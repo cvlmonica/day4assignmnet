@@ -1,0 +1,31 @@
+{
+	"name": "SqlServerTable4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerAdventureworks",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"servername": "LAPTOP-BA36MVQ0\\JAYANTH",
+				"databasename": "AdventureWorks2012",
+				"username": "jayanth",
+				"password": "training123$"
+			}
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "HumanResources",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

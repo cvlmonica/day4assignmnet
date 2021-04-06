@@ -1,0 +1,14 @@
+{
+	"name": "AzureDataLakeStore2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://monicaadlsgen1.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "0912c78d-18da-43f4-bf58-bf2848b32693",
+			"subscriptionId": "ab99974c-1303-4911-9f21-f5aad3ecdacb",
+			"resourceGroupName": "monica-lti"
+		}
+	}
+}
